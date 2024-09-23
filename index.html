@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            background-color: rgb(104, 4, 104);
+            height: 200px;
+        }
+
+        .card {
+            border: 2px solid indigo;
+            border-radius: 5px;
+            width: 400px;
+            margin: -152px auto 0px;
+        }
+
+        .card-header {
+            background-image: url("assets/images/background.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card-header>h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .card-header>p {
+            text-align: center;
+            color: white;
+        }
+
+        .card-body {
+            padding: 20px;
+
+        }
+
+        .group {
+            display: flex;
+            margin: 5px 0;
+        }
+
+        .group>span {
+            background-color: indigo;
+            color: white;
+            padding: 10px;
+        }
+
+        .group>input {
+            flex-grow: 1;
+        }
+
+        .btn {
+            background-color: indigo;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(139, 84, 178);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="card">
+        <div class="card-header">
+            <h1>secure login</h1>
+            <p>powered by skillhub</p>
+        </div>
+        <div class="card-body">
+            <div class="group">
+                <span>username</span>
+                <input type="text" placeholder="email/mobile no">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="group">
+                <span>class pin</span>
+                <input type="text" placeholder="class pin">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="group">
+                <span>password</span>
+                <input type="password" placeholder="password">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <button class="btn">login</button>
+        </div>
+    </div>
+</body>
+
+</html>
